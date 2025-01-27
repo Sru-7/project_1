@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #eaf4fc, #c0d9f2); /* Soft gradient background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(to right, #1d2d53, #283d6b); /* Deep blue gradient */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 4px solid #1d2d53;  /* Underline the header */
+}
+
+h1 {
+    margin: 0;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+/* Best College Team Section */
+.best-college-team {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 30px 20px;
+    text-align: center;
+    color: #1d2d53;
+    border-left: 10px solid #1d2d53;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.best-college-team h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.best-college-team p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Awards Section */
+.games-awards {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.game {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease-in-out;
+}
+
+.game:hover {
+    transform: translateY(-5px); /* Slight hover effect */
+}
+
+.game img {
+    width: 130px;
+    height: 130px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.game-details {
+    width: 70%;
+}
+
+.game h2 {
+    font-size: 28px;
+    color: #1d2d53;
+    margin-bottom: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    font-size: 18px;
+    margin: 8px 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul li.best-player {
+    font-weight: bold;
+    color: #1d2d53;
+    font-size: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #1d2d53;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,194 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f1fa; /* Light Blue background */
+    color: #333;
+  }
+  
+  header {
+    background-color: #003366; /* Deep Blue */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+  
+  /* Schedule Section */
+  .schedule {
+    padding: 40px 10%;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+  }
+  
+  .schedule h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #003366; /* Deep Blue */
+  }
+  
+  /* Day Schedule */
+  .day-schedule {
+    background-color: #f0f8ff; /* Soft light blue */
+    border-radius: 12px;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .day-schedule:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .day-schedule h3 {
+    color: #003366; /* Deep Blue */
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  /* Event List Styling */
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #eaf3fb; /* Soft Blue */
+    transition: background-color 0.3s ease;
+  }
+  
+  ul li:hover {
+    background-color: #b3cce6; /* Lighter Blue on hover */
+    color: #003366;
+  }
+  
+  ul li strong {
+    color: #003366; /* Deep Blue for event names */
+    font-weight: 500;
+  }
+  
+  /* Adding Bullet Styling */
+  ul li:before {
+    content: '\2022'; /* Bullet point */
+    color: #003366;
+    font-size: 28px;
+    margin-right: 15px;
+  }
+  
+  /* Event Time Styling */
+  ul li span {
+    font-size: 16px;
+    color: #555;
+    font-weight: 400;
+  }
+  
+  /* Alternate Day Coloring */
+  .day-schedule:nth-child(odd) {
+    background-color: #e6f3ff; /* Lighter blue for odd days */
+  }
+  
+  .day-schedule:nth-child(even) {
+    background-color: #d9e7f4; /* Slightly darker light blue for even days */
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .schedule {
+      padding: 30px 5%;
+    }
+  
+    h1 {
+      font-size: 36px;
+    }
+  
+    .day-schedule h3 {
+      font-size: 24px;
+    }
+  
+    /* Event List Styling */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.8;
+    display: block; /* Changed from flex to block for vertical stacking */
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #eaf3fb; /* Soft Blue */
+    transition: background-color 0.3s ease;
+  }
+  
+  ul li:hover {
+    background-color: #b3cce6; /* Lighter Blue on hover */
+    color: #003366;
+  }
+  
+  ul li strong {
+    color: #003366; /* Deep Blue for event names */
+    font-weight: 500;
+  }
+  
+  /* Adding Bullet Styling */
+  ul li:before {
+    content: '\2022'; /* Bullet point */
+    color: #003366;
+    font-size: 28px;
+    margin-right: 15px;
+  }
+  
+  /* Event Time Styling */
+  ul li span {
+    font-size: 16px;
+    color: #555;
+    font-weight: 400;
+  }
+  
+  }
+
+  
+  
+  /* Footer */
+  footer {
+    background-color: #003366; /* Deep Blue */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+  }
+  
