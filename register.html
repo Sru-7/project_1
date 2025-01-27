@@ -1,26 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form Page</title>
-  <link rel="stylesheet" href="rstyles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <link rel="stylesheet" href="rstyles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>REGISTER</h1>
-    <form action="#" method="post" class="form">
-      <label for="name">College name:</label>
-      <input type="text" id="name" name="name" placeholder="Enter your name" required>
-      
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email" required>
-      
-      <label for="password">Password:</label>
-      <input type="password" id="password" placeholder="Enter password" required>
-      
-      <button type="submit" class="btn">Submit</button>
+    <form>
+      <h1>DIVE INTO SPORTS MANIA</h1>
+      <br/>
+        <div class="form-group">
+            <label for="dropdown"><b>Select an option:</b></label>
+            <select id="dropdown" name="dropdown" required>
+                <option value="">Select your college</option>
+                <option value="option1">IIIT, ALLAHABAD</option>
+                <option value="option2">IIIT, LUCKNOW</option>
+                <option value="option3">ABV-IIITM, GWALIOR</option>
+                <option value="option3">IIITDM, JABALPUR</option>
+                <option value="option3">IIIT, TIRUCHIRAPALLI</option>
+                <option value="option3">IIIT, BHAGALPUR</option>
+                <option value="option3">IIIT, BHOPAL</option>
+                <option value="option3">IIIT, KALYANI</option>
+                <option value="option3">IIIT, PUNE</option>
+            </select>
+        </div>
+        <br/>
+        <div class="form-group">
+            <label for="email"><b>Email address:</b></label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <p><b>Choose your preferences (select all that apply):</b></p>
+            <div class="radio-group">
+                <input type="checkbox" id="pref1" name="preferences" value="pref1">
+                <label for="pref1">VOLLEYBALL</label>
+            </div>
+            <div class="radio-group">
+                <input type="checkbox" id="pref2" name="preferences" value="pref2">
+                <label for="pref2">LAWN TENNIS</label>
+            </div>
+            <div class="radio-group">
+                <input type="checkbox" id="pref3" name="preferences" value="pref3">
+                <label for="pref3">CRICKET</label>
+            </div>
+            <div class="radio-group">
+              <input type="checkbox" id="pref3" name="preferences" value="pref3">
+              <label for="pref3">BASKETBALL</label>
+            </div>
+            <div class="radio-group">
+              <input type="checkbox" id="pref3" name="preferences" value="pref3">
+              <label for="pref3">SWIMMING</label>
+            </div>
+            <div class="radio-group">
+              <input type="checkbox" id="pref3" name="preferences" value="pref3">
+              <label for="pref3">ATHLETICS</label>
+            </div>
+            <div class="radio-group">
+              <input type="checkbox" id="pref3" name="preferences" value="pref3">
+              <label for="pref3">FOOTBALL</label>
+            </div>
+            <div class="radio-group">
+              <input type="checkbox" id="pref3" name="preferences" value="pref3">
+              <label for="pref3">BADMINTON</label>
+            </div>
+        </div>
+        <button type="submit">Submit</button>
     </form>
-  </div>
 </body>
 </html>
