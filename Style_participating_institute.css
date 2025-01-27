@@ -1,89 +1,174 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.institutes {
-  padding: 20px;
-  margin: 20px;
-  border-radius: 8px;
-}
-
-.institutes h2 {
-  margin-top: 0;
-}
-
-
-.institutes table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-.institutes table td:nth-child(2), .institutes table th:nth-child(2) {
-  width: 150px; /* Adjust the width as needed */
-}
-
-
-.institutes th, .institutes td {
-  padding: 10px;
-  text-align: center;
-  border: 1px solid #2c3e50;
-}
-
-/* Container to hold the image and text side by side */
-.image-text {
-  display: flex; 
-  align-items: center;
-  justify-content: center;
-}
-
-.institute-logo {
-  padding-left: 20px;
-  width: 150px; /* Adjust image size */
-  height: 150px;
-}
-
-.image-text p {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 25px;
-  margin: 20px; 
-}
-
+/* General Body Styling */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.8;
-  background-color: #E3F2FD; 
-  color: black;
-  padding: 20px;
-  margin: 0;
-}
-h1 {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     text-align: center;
-    font-size: 3rem;
-    color: #2c3e50;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Heading Styling */
+h1 {
+    color: #333;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 47px;
+    margin-top: 100px;
+}
+
+/* Navbar Styling */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: darkblue;
+    color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar Container */
+.navbar {
+    padding-left: 30px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Navbar Links */
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    gap: 60px;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Navbar Link Styling */
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+/* Navbar Link Hover Effects */
+.nav-links li a:hover {
+    border-color: white;
+    border-radius: 5px;
+    color: black;
+    background-color: rgb(137, 249, 249);
+}
+
+/* College List Styling */
+.college-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Individual College Card Styling */
+.college {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 200px;
+    text-align: center;
     margin-bottom: 20px;
-    font-weight: bold;
-  }
-  footer {
-    background-color: #2c3e50;
+}
+
+/* College Image Styling */
+.college img {
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+}
+
+/* College Link Styling */
+.college a {
+    display: block;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* College Link Hover Effect */
+.college a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+/* Footer Styling */
+
+.footer {
+    background-color:cadetblue;
     color: white;
     text-align: center;
-    padding: 15px;
-    position: relative;
+    position:relative;
     bottom: 0;
     width: 100%;
-    font-size: 1.1rem;
   }
-  
-  footer p {
-    margin: 0;
+
+  .footer-container {
+    display: flex;
+    gap:320px;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
   }
-  
-  footer a {
-    color: #ff6347;
+
+  .footer h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+
+  .footer-section {
+    text-align: left;
+  }
+
+  .footer-section p {
+    margin: 5px 0;
+    color: black;
+  }
+
+  .footer-section a {
+    color: white;
     text-decoration: none;
   }
-  
-  footer a:hover {
+
+  .footer-section a:hover {
     text-decoration: underline;
+    color:black;
   }
+/* Social Media Icon Styling */
+.social-media {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.social-icon {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: black;
+}
+
+/* Icon Container */
+.icon {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
