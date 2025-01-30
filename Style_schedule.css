@@ -1,12 +1,56 @@
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #e0f1fa; /* Light Blue background */
-    color: #333;
+    box-sizing: border-box;
   }
   
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: lightblue;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:darkblue;
+    color:white;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar {
+    padding-left: 30px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style-type: none;
+    gap: 60px;
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border: 2px solid transparent; 
+    transition: 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    border-color: white; 
+    border-radius: 5px;
+    color:black;
+    background-color:rgb(137, 249, 249); 
+  }
   header {
     background-color: #003366; /* Deep Blue */
     color: white;
@@ -16,53 +60,7 @@ body {
   }
 
   /* Navbar Styling */
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: darkblue;
-  color: white;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
 
-/* Navbar Container */
-.navbar {
-  padding-left: 30px;
-  padding-right: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-/* Navbar Links */
-.nav-links {
-  display: flex;
-  list-style-type: none;
-  gap: 60px;
-  font-size: 18px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-/* Navbar Link Styling */
-.nav-links li a {
-  text-decoration: none;
-  color: white;
-  padding: 10px 15px;
-  border: 2px solid transparent;
-  transition: 0.3s;
-}
-
-/* Navbar Link Hover Effects */
-.nav-links li a:hover {
-  border-color: white;
-  border-radius: 5px;
-  color: black;
-  background-color: rgb(137, 249, 249);
-}
   
   h1 {
     margin: 0;
@@ -71,10 +69,6 @@ nav {
     margin-top: 100px;
   }
   
-  p {
-    font-size: 20px;
-    margin: 5px 0;
-  }
   
   /* Schedule Section */
   .schedule {
@@ -229,69 +223,68 @@ ul {
   
   }
 
-  
-.footer {
-  background-color:cadetblue;
-  color: white;
-  text-align: center;
-  position:relative;
-  bottom: 0;
-  width: 100%;
-}
+  .footer {
+    background-color:cadetblue;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
 
-.footer-container {
+  .footer-container {
+    display: flex;
+    gap:320px;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 30px;
+  }
+
+  .footer h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+
+  .footer-section {
+    text-align: left;
+  }
+
+  .footer-section p {
+    margin: 5px 0;
+  }
+
+  .footer-section a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .footer-section a:hover {
+    text-decoration: underline;
+    color:black;
+  }
+  .highlight{
+    color:black;
+    text-decoration: underline;
+  }
+  .social-media {
+    display: flex;
+    gap: 20px;
+  }
+
+  .social-icon {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+
+  .social-icon:hover {
+    color: black;
+  }
+
+.icon{
   display: flex;
-  gap:320px;
-  align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.footer h3 {
-  margin-bottom: 10px;
-  font-size: 24px;
-}
-
-.footer-section {
-  text-align: left;
-}
-
-.footer-section p {
-  margin: 5px 0;
-  color: black;
-}
-
-.footer-section a {
-  color: white;
-  text-decoration: none;
-}
-
-.footer-section a:hover {
-  text-decoration: underline;
-  color:black;
-}
-/* Social Media Icon Styling */
-.social-media {
-  display: flex;
-  gap: 20px;
   justify-content: center;
-}
-
-.social-icon {
-  color: white;
-  font-size: 20px;
-  transition: color 0.3s;
-}
-
-.social-icon:hover {
-  color: black;
-}
-
-/* Icon Container */
-.icon {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+  gap:20px;
 }
 
 
